@@ -1,0 +1,16 @@
+h1 {
+  text-align: center;
+}
+
+.header {
+  height: 150px;
+  background: url('./../../public/party-images-004.jpg');
+  background-position-y: -700px;
+  opacity: 0.9;
+  color: white;
+}
+.header h1 {
+  padding-top: 50px;
+  font-size: 5em;
+  margin-top: 0;
+}
