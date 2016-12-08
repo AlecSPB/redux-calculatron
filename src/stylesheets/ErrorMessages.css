@@ -1,0 +1,6 @@
+ul.error-messages {
+    list-style-type: none;
+}
+ul.error-messages li {
+    color: darkred;
+}

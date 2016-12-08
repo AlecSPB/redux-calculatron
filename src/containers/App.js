@@ -19,12 +19,13 @@ class App extends Component {
         return (
             <div className="calculator">
                 <div className="header">
-                    <h1>Cacculatron</h1>
+                    <h1>Caccculatron</h1>
                 </div>
 
                 <CalcInput
                     onClick={this.handleCalculateClick}
-                    result={this.props.result}/>
+                    result={this.props.result}
+                    isCalculating={this.props.isCalculating}/>
             </div>
         );
     }

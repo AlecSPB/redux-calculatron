@@ -10,7 +10,7 @@ import reducer from '../actions'
 
 const store = createStore(
     reducer,
-    {isCalculating: false, result: 'nothing calculated yet'},
+    {isCalculating: false, result: undefined},
     compose(
         applyMiddleware(thunkMiddleware)
     )

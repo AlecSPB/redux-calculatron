@@ -6,9 +6,14 @@ class CalcResult extends Component {
         this.props = props;
     }
     render() {
-        return (
-            <h1>Monthly payment: {this.props.result}</h1>
-        );
+        let message = "Nothing calculated yet";
+        if(this.props.result && !this.props.isCalculating) {
+            message = "Monthly payment: " + Number(this.props.result).toFixed(2) + "kr";
+
+        } else if(this.props.isCalculating) {
+            message = "Calculating ...";
+        }
+        return (<h1>{message}</h1>)
     }
 }
 
